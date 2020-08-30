@@ -62,7 +62,7 @@ ggplot(runoff, aes(datetime, runoff)) +
 # save rainfall-runoff data
 rainfall_runoff <- out %>%
   left_join(runoff, by = "datetime") %>%
-  select(datetime, X = rain, y = runoff) %>%
+  select(datetime, X = rain, Y = runoff) %>%
   .[complete.cases(.),]
 
 write.csv(rainfall_runoff, 
