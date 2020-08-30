@@ -49,3 +49,6 @@ ggplot(data_plot, aes(datetime, value, color = cases, linetype = cases))+
   theme(legend.position = "top")
 
 
+
+
+
